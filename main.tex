@@ -1,0 +1,51 @@
+\documentclass[10pt]{cls/LaTeX-Class-File-for-Research-Report-Formats-of-Mahidol-University}
+\usepackage[utf8]{inputenc}
+\graphicspath{ {images/} }
+\begin{document}
+\typeOfReport{thematic} %thesis %thematic
+\title{an implementation of latex class file for research report formats of mahidol university}
+\titleThai{\begin{thai} การพัฒนาคลาสของ Latex เพื่อใช้ในการจัดรูปแบบรูปเล่ม วิทยานิพนธ์ หรือ สารนิพนธ์ ของมหาวิทยาลัยมหิดล  \end{thai}}
+\author{Test Name-Lastname}
+\authorThai{\begin{thai} ทดสอบ ชื่อ-นามสกุล \end{thai}}
+\degreefaculty{M.Sc. (Information Technology Management)}
+\degreefacultyThai{\begin{thai} วท.ม. (การจัดการเทคโนโลยีสารสนเทศ) \end{thai}}
+\ProgramTitle{a thematic paper submitted in partial fulfillment of the requirements for the degree of master of science (information technology management) faculty of graduate study mahidol university 2017}
+\DegreeTitle{Thematic Paper}
+\SubmittedFor{Master of Science (Information Technology Management)}
+\SubmittedDate{January 1, 2017}
+\Advisor{Lect. Somchai Saijai, Ph.D. (Electrical Engineering)}
+\CoAdvisor{Asst. Prof. Sakarin Daoray, Ph.D. (Electrical and Computer Engineering)}
+\Committee{Asst. Prof. Sakarin Daoray, Ph.D. (Electrical and Computer Engineering)}
+\CommitteePosition{Program Director Master of Science Program in Information Technology Management Faculty of Engineering Mahidol University}
+\dean{Prof. Precha Prache, M.D.,Ph.D. (Biochemistry)}
+\deanPo{Faculty of Graduate Studies, Mahidol University}
+\deanAct{Asst. Prof. Warakorn Charoensuk, Ph.D. (Electical Engineering)}
+\deanActPo{Faculty of Graduate Studies, Mahidol University}
+\memberOne{Lect. Somboon Boonnad Ph.D. (Information Technology)}
+\memberTwo{Asst. Prof. Kaijoh Brother, Ph.D. (Electrial and Computer Engineering)}
+\memberThree{Asst. Prof. Sakarin Daoray, Ph.D. (Electrical and Computer Engineering)}
+
+\referencesOrBibliography{References} %change name of title References Or Bibliography
+
+\maketitle
+
+\input{abstract}
+\input{acknowledgement}
+
+%%%%% please use it for header numbering mahidol style %%%%%
+\maketitle
+\tableofcontents
+\listoftables
+\listoffigures
+\pagestyle{mahidol-fancy-style}
+
+\input{chapter1}
+\input{chapter2}
+\input{chapter3}
+%\input{chapter4}
+%\input{chapter5}
+\input{references}
+\input{appendices}
+\input{biography}
+
+\end{document} %%%%%%%%%%  do not put anything after this

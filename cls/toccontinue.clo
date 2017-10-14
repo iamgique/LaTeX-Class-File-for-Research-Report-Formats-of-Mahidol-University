@@ -1,0 +1,65 @@
+% \subsubsection{Page Numbering at Top}
+% In this section we will redefine the running title, so that only the
+% page number is printed. This can be achieved with a pagestyle which
+% only prints the page at the top (like plain prints at the bottom).
+%    \begin{macrocode}
+\def\ps@pageontop{
+   \def\@oddhead{\rmfamily\hfil\thepage}
+   \let\@evenhead\@oddhead
+   \def\@oddfoot{}
+   }
+   %\let\@evenfoot\@oddfoot}
+%    \end{macrocode}
+%
+% \subsubsection{Page Numbering at Bottom}
+%    \begin{macrocode}
+\def\ps@pageonbottom{
+   \def\@oddhead{}
+   \def\@evenhead{}
+   }
+   %\def\@oddfoot{\rmfamily\hfil\thepage\hfil}
+   %\let\@evenfoot\@oddfoot}
+%    \end{macrocode}
+%
+
+%
+% \subsection{Running Titles}
+% \subsubsection{Front Matter Continuation Headings}
+% This is the page style needed to print the headers in subsequent pages
+% of the front matter pages other than the table of contents and the
+% lists of figures and tables.
+% The line that has a \verb+\vbox to 24pt{}+
+% was set to use the \verb+\baselineskip+ but the baselineskip is set
+% to zero and therefore cannot be used.
+%    \begin{macrocode}
+\def\ps@continued{
+   \def\@oddhead{\headmark}
+   \let\@evenhead\@oddhead
+   }
+   %\def\@oddfoot{\rmfamily\normalsize\hfil\thepage\hfil}
+   %\let\@evenfoot\oddfoot}
+%    \end{macrocode}
+%
+% \subsubsection{Appendix Continuation Headings}
+% This is the page style needed to print the headers in subsequent pages
+% of the appendix.
+%    \begin{macrocode}
+\def\ps@appendixcontinued{
+   \def\@oddhead{\headmark}
+   \let\@evenhead\@oddhead
+   \def\@oddfoot{}
+   \let\@evenfoot\oddfoot}
+%    \end{macrocode}
+%
+% \subsubsection{Bibliography Continuation Headings}
+% This is the page style needed to print the headers in subsequent pages
+% of the bibliography.
+%    \begin{macrocode}
+\def\ps@bibliographycontinued{
+   \def\@oddhead{\headmark\rmfamily\hfil\thepage}
+   \let\@evenhead\@oddhead
+   \def\@oddfoot{}
+   \let\@evenfoot\oddfoot}   
+%    \end{macrocode}
+%
+% END PAGE LAYOUT
